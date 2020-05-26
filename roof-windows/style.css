@@ -1,0 +1,355 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 630px;
+}
+.mainTitle{
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 65px;
+    text-shadow: 5px 5px 9px black;
+}
+.mainTitle a{
+    transition: 0.3s;
+}
+.mainTitle a:hover{
+    text-shadow: 9px 9px 11px black;
+}
+.secondaryTitle{
+    font-weight: 600;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px black;
+    margin-left: 5px;
+}
+.ourAdvantages{
+    margin-top: 60px;
+    margin-left: 5px;
+}
+.defaultAdvantageStyle{
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 3px black;
+    font-weight: 300;
+    font-size: 24px;
+    transition: 0.3s;
+}
+.defaultAdvantageStyle:hover{
+    color: red;
+}
+.firstAdvantage{
+    margin-left: 25px;
+}
+.secondAdvantage{
+    margin-left: 45px;
+}
+.thirdAdvantage{
+    margin-left: 65px;
+}
+.fourthAdvantage{
+    margin-left: 85px;
+}
+.mainBox{
+    min-height: 700px;
+    color: white;
+    background-color: rgb(44,44,44);
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    padding-bottom: 30px
+}
+#red{
+    text-decoration: none;
+    color: red;
+    font-weight: bolder;
+}
+.header__box{
+    min-height: 70px;
+    background-color: rgba(255, 0, 0,0.7);
+    box-shadow: 0px 5px 26px 5px black;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 0px 40px;
+}
+.logoBox{
+    min-height: 65px;
+    width: 135px;
+    background-image: url(images/newLogoLLwhite.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.nav-link{
+    color: white;
+    transition: 0.3s;
+}
+.nav-link:hover{
+    color: silver;
+}
+.nav{
+    height: 100%;
+    align-items: center;
+    font-size: 24px;
+}
+.phoneBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    background-color: rgba(255, 0, 0,0.7);
+    box-shadow: 5px 5px 15px black;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.phoneBox:hover{
+    box-shadow: 10px 10px 25px black;
+}
+.phone{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+.phone span{
+    margin-left: 30px;
+}
+.phone:hover{
+    text-decoration: none;
+    color: white;
+}
+.section__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    font-family: 'Roboto', sans-serif;
+}
+.section__title{
+    letter-spacing: 7px;
+    font-weight: 300;
+}
+.section__subtitle{
+    color: red;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: -0px;
+    font-weight: 400;
+}
+.title_underline{
+    width: 80px;
+    height: 1px;
+    background-color: red;
+    margin-top: 6px;
+}
+.product-card{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    margin-bottom: 20px;
+    width: 100%;
+    padding-top: 20px;
+}
+.cards-default-shadow{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.cards-default-shadow:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.product-card:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card__image-box{
+    width: 97%;
+    margin: auto;
+    height: 360px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.card-img-top{
+    max-height: 300px;
+}
+.card-text{
+    word-spacing: 3px;
+}
+.about-smth-card{
+    width: 100%;
+    min-height: 100px;
+    margin: 0px 0px 20px 0px;
+    padding: 20px 15px 0px 15px;
+}
+.certificate-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.about-us-icon-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    color: #E20026;
+    text-shadow: 2px 2px 3px black;
+}
+.about-us-item, .roto-factory-img, .map-box{
+    margin-bottom: 20px;
+}
+.certificate{
+    height: 440px;
+}
+.certificate:hover{
+    height: 465px;
+}
+.roto-factory-img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0px 15px;
+}
+#footer{
+    height: 250px;
+    margin-top: 100px;
+    background-color: #5e0600;
+    background-color: #E20026;
+    padding-top: 20px;
+    color: white;
+    letter-spacing: 2px;
+}
+.about-developer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    padding-top: 20px;
+    border-top: 1px solid white;
+}
+.link-linkedin{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+#scroll-Top{
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E20026;
+    font-size: 26px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.roto-card-logo-box{
+    position: relative;
+    top: 0px;
+    left: 78%;
+    width: 60px;
+    z-index: 10;
+}
+.card-subtitle{
+    color: red;
+    font-size: 12px;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 2px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.arrow{
+    color: black;
+    font-size: 30px;
+}
+.carousel-item{
+    height: 400px;
+}
+.d-block{
+    max-height: 90%;
+    max-width: 100%;
+}
+.redColorOfText{
+    color: red;
+}
+.windowAdvantage{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.modalLine{
+    width: 100%;
+    height: 1px;
+    margin: 10px 0px;
+    background-color: silver;
+}
+.specificationsTable{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+.specificationsTable th{
+    font-size: 13px;
+    font-weight: normal;
+}
+.specificationsTable th, td{
+    text-align: center;
+    border-bottom: 2px solid silver;
+}
+.specificationsRow td{
+    background-color: #EEEEF0;
+    border-left: 1px solid white;
+}
+.equipmentName{
+    text-align: left;
+}
+.wdIcon{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    font-size: 35px;
+    margin-right: 20px;
+}
+.wdIconBox{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 20px 0px;
+}
+.windowIconBox{
+    width: 115px;
+    margin-left: 15px;
+}
+.windowIconBox img{
+   width: 100%; 
+}
+.modalTitleBox{
+    width: 100%;
+    display: flex;
+}
+.cardPremiumSubtitle{
+    color: green;
+    font-size: 12px;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 2px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
