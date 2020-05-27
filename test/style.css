@@ -362,17 +362,25 @@ body{
     background-size: 200px;
 }
 #headerSmallSubtitle{
-    height: 30px;
+    height: 40px;
     display: flex;
     justify-content: center;
+    border-bottom: 2px solid white;
 }
 #headerSmallSubtitle h1{
     font-size: 22px;
     letter-spacing: 3px;
 }
 #headerSmallOurAdvantages{
+    height: 60px;
     display: flex;
     padding: 0px 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+#headerSmallOurAdvantages h2{
+    font-size: 17px;
+    letter-spacing: 2px;
 }
 
 @media screen and (max-width: 768px){
