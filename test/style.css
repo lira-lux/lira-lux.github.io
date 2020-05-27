@@ -349,12 +349,31 @@ body{
 #headerSmall{
     display: none;
     width: 100%;
-    height: 300px;
+    min-height: 230px;
     background-color: red;
     color: white;
+    padding-top: 10px;
 }
-
-
+#headerSmallLogoBox{
+    height: 120px;
+    background-image: url(images/newLogoLLwhite.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+}
+#headerSmallSubtitle{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+#headerSmallSubtitle h1{
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+#headerSmallOurAdvantages{
+    display: flex;
+    padding: 0px 15px;
+}
 
 @media screen and (max-width: 768px){
     body{
@@ -367,11 +386,13 @@ body{
         display: none;
     }
     #headerSmall{
-        display: flex;
+        display: block;
     }
     .about-us-item{
         padding-top: 15px;
     }
-    
+    .section__header{
+        height: 200px;
+    }
     
 }
