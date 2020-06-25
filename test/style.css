@@ -212,7 +212,7 @@ body{
     padding: 0px 15px;
 }
 #footer{
-    height: 250px;
+    min-height: 250px;
     margin-top: 100px;
     background-color: #5e0600;
     background-color: #E20026;
@@ -402,5 +402,13 @@ body{
     .section__header{
         height: 200px;
     }
-    
+    #footer{
+    min-height: 430px;
+    }
+    .phone-center{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
 }
