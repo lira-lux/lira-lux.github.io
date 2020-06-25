@@ -410,5 +410,6 @@ body{
         justify-content: center;
         margin-bottom: 20px;
         margin-top: 10px;
+        max-height: 65px;
     }
 }
