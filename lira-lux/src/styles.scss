@@ -67,4 +67,25 @@ body{
 .about-us-item, .roto-factory-img, .map-box{
   margin-bottom: 20px;
 }
+@media screen and (max-width: 768px){
+  body{
+    width: 100%;
+  }
+  .about-us-item{
+    padding-top: 15px;
+  }
+  .section__header{
+    height: 200px;
+  }
+  #footer{
+    min-height: 430px;
+  }
+  .phone-center{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    max-height: 65px;
+  }
+}
 

@@ -2,59 +2,60 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-}
+}/*є*/
 body{
     font-family: 'Source Sans Pro', sans-serif;
     min-width: 391px;
-}
-.mainContainer{
+}/*є*/
+.mainContainer{ /*є*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 630px;
 }
-.mainTitle{
+.mainTitle{ /*є*/
     padding-top: 20px;
     font-weight: 400;
     font-size: 65px;
     text-shadow: 5px 5px 9px black;
 }
-.mainTitle span{
+.mainTitle span{ /*є*/
     font-weight: bolder;
 }
-.secondaryTitle{
+.secondaryTitle{ /*є*/
     font-weight: 600;
     font-size: 25px;
     text-shadow: 2px 2px 2px black;
     margin-left: 5px;
 }
-.ourAdvantages{
+.ourAdvantages{ /*є*/
     margin-top: 60px;
     margin-left: 5px;
 }
-.defaultAdvantageStyle{
+.defaultAdvantageStyle{ /*є*/
     margin-bottom: 20px;
     text-shadow: 2px 2px 3px black;
     font-weight: 300;
     font-size: 24px;
     transition: 0.3s;
 }
-.defaultAdvantageStyle:hover{
+.defaultAdvantageStyle:hover{ /*є*/
     color: red;
 }
-.firstAdvantage{
+.firstAdvantage{ /*є*/
     margin-left: 25px;
 }
-.secondAdvantage{
+.secondAdvantage{ /*є*/
     margin-left: 45px;
 }
-.thirdAdvantage{
+.thirdAdvantage{ /*є*/
     margin-left: 65px;
 }
-.fourthAdvantage{
+.fourthAdvantage{ /*є*/
     margin-left: 85px;
 }
-.mainBox{
+/*є*/
+.mainBox{ /*є*/
     min-height: 700px;
     color: white;
     background-color: rgb(44,44,44);
@@ -64,7 +65,7 @@ body{
     background-size: cover;
     padding-bottom: 30px
 }
-.header__box{
+.header__box{ /*є*/
     min-height: 70px;
     background-color: rgba(255, 0, 0,0.7);
     box-shadow: 0px 5px 26px 5px black;
@@ -72,26 +73,26 @@ body{
     border-bottom-left-radius: 15px;
     padding: 0px 40px;
 }
-.logoBox{
+.logoBox{ /*є*/
     min-height: 65px;
     width: 135px;
     background-image: url(images/newLogoLLwhite.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
-.nav-link{
+.nav-link{ /*є*/
     color: white;
     transition: 0.3s;
 }
-.nav-link:hover{
+.nav-link:hover{ /*є*/
     color: silver;
 }
-.nav{
+.nav{ /*є*/
     height: 100%;
     align-items: center;
     font-size: 24px;
 }
-.phoneBox{
+.phoneBox{ /*є*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,10 +102,10 @@ body{
     border-radius: 15px;
     transition: 0.3s;
 }
-.phoneBox:hover{
+.phoneBox:hover{ /*є*/
     box-shadow: 10px 10px 25px black;
 }
-.phone{
+.phone{ /*є*/
     text-decoration: none;
     color: white;
     font-weight: 400;
@@ -112,14 +113,14 @@ body{
     width: 100%;
     text-align: center;
 }
-.phone span{
+.phone span{ /*є*/
     margin-left: 30px;
 }
-.phone:hover{
+.phone:hover{ /*є*/
     text-decoration: none;
     color: white;
 }
-.section__header{
+.section__header{ /*є*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,18 +128,18 @@ body{
     height: 130px;
     font-family: 'Roboto', sans-serif;
 }
-.section__title{
+.section__title{ /*є*/
     letter-spacing: 7px;
     font-weight: 300;
 }
-.section__subtitle{
+.section__subtitle{ /*є*/
     color: red;
     font-size: 13px;
     letter-spacing: 3px;
     margin-bottom: -0px;
     font-weight: 400;
 }
-.title_underline{
+.title_underline{ /*є*/
     width: 80px;
     height: 1px;
     background-color: red;
@@ -151,11 +152,11 @@ body{
     width: 100%;
     padding-top: 20px;
 }
-.cards-default-shadow{
+.cards-default-shadow{ /*є*/
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
-.cards-default-shadow:hover{
+.cards-default-shadow:hover{ /*є*/
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .product-card:hover{
@@ -175,19 +176,19 @@ body{
 .card-text{
     word-spacing: 3px;
 }
-.about-smth-card{
+.about-smth-card{ /*є*/
     width: 100%;
     min-height: 100px;
     margin: 0px 0px 20px 0px;
     padding: 20px 15px 0px 15px;
 }
-.certificate-box{
+.certificate-box{ /*є*/
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
 }
-.about-us-icon-position{
+.about-us-icon-position{ /*є*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,16 +196,16 @@ body{
     color: #E20026;
     text-shadow: 2px 2px 3px black;
 }
-.about-us-item, .roto-factory-img, .map-box{
+.about-us-item, .roto-factory-img, .map-box{ /*є*/
     margin-bottom: 20px;
 }
-.certificate{
+.certificate{ /*є*/
     height: 440px;
 }
-.certificate:hover{
+.certificate:hover{ /*є*/
     height: 465px;
 }
-.roto-factory-img-box{
+.roto-factory-img-box{ /*є*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,7 +277,7 @@ body{
     max-height: 90%;
     max-width: 100%;
 }
-.redColorOfText{
+.redColorOfText{ /*є*/
     color: red;
 }
 .windowAdvantage{
@@ -346,7 +347,7 @@ body{
     letter-spacing: 1px;
     font-weight: bold;
 }
-#headerSmall{
+#headerSmall{ /*є*/
     display: none;
     width: 100%;
     min-height: 230px;
@@ -354,31 +355,31 @@ body{
     color: white;
     padding-top: 10px;
 }
-#headerSmallLogoBox{
+#headerSmallLogoBox{ /*є*/
     height: 120px;
     background-image: url(images/newLogoLLwhite.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 200px;
 }
-#headerSmallSubtitle{
+#headerSmallSubtitle{ /*є*/
     height: 40px;
     display: flex;
     justify-content: center;
     border-bottom: 2px solid white;
 }
-#headerSmallSubtitle h1{
+#headerSmallSubtitle h1{ /*є*/
     font-size: 22px;
     letter-spacing: 3px;
 }
-#headerSmallOurAdvantages{
+#headerSmallOurAdvantages{ /*є*/
     height: 60px;
     display: flex;
     padding: 0px 15px;
     justify-content: space-around;
     align-items: center;
 }
-#headerSmallOurAdvantages h2{
+#headerSmallOurAdvantages h2{ /*є*/
     font-size: 17px;
     letter-spacing: 2px;
 }
@@ -390,10 +391,10 @@ body{
     #scroll-Top{
         display: none;
     }
-    #sectionHeader{
+    #sectionHeader{ /*є*/
         display: none;
     }
-    #headerSmall{
+    #headerSmall{ /*є*/
         display: block;
     }
     .about-us-item{
