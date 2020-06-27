@@ -212,7 +212,7 @@ body{
     overflow: hidden;
     padding: 0px 15px;
 }
-#footer{
+#footer{ /*є*/
     min-height: 250px;
     margin-top: 100px;
     background-color: #5e0600;
@@ -221,7 +221,7 @@ body{
     color: white;
     letter-spacing: 2px;
 }
-.about-developer{
+.about-developer{ /*є*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,7 +229,7 @@ body{
     padding-top: 20px;
     border-top: 1px solid white;
 }
-.link-linkedin{
+.link-linkedin{ /*є*/
     text-decoration: none;
     color: white;
     font-size: 14px;
@@ -385,7 +385,7 @@ body{
 }
 
 @media screen and (max-width: 768px){
-    body{
+    body{ /*є*/
         width: 100%;
     }
     #scroll-Top{
