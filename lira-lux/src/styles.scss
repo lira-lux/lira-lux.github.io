@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  min-width: 391px;
+}
+.logoBox{
+  min-height: 65px;
+  width: 135px;
+  background-image: url(src/assets/images/newLogoLLwhite.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.redColorOfText{
+  color: red;
+}
+
