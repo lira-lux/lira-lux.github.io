@@ -1,0 +1,225 @@
+<div class="card product-card">
+  <div class="card__image-box" [ngStyle]="{'background-image':'url('+ card.imageUrl +')'}">
+    <div class="roto-card-logo-box"><img src="../assets/images/logo-roto.png" alt="rotoLogo" style="width: 70px;"></div>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{card.cardTitle}}</h5>
+    <p class="card-text">{{card.cardText}}</p>
+    <p>{{card.price}}</p>
+    <button type="button" class="btn btn-outline-success" (click)="open()">Дізнатись більше</button>
+<!--    <app-modal></app-modal>-->
+
+<!--    <div class="modal fade R79Modal" tabindex="-1" role="dialog" aria-labelledby="R79Modal" aria-hidden="true">-->
+<!--      <div class="modal-dialog modal-xl">-->
+<!--        <div class="modal-content">-->
+<!--          <div class="modal-header">-->
+<!--            <h5 class="modal-title">Roto Designo R79 WD</h5>-->
+<!--            <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--              <span aria-hidden="true">&times;</span>-->
+<!--            </button>-->
+<!--          </div>-->
+<!--          <div class="modal-body">-->
+<!--            <div class="row">-->
+<!--              <div class="col-lg-6 col-12 ">-->
+<!--                <div id="carouselR79Interval" class="carousel slide" data-ride="carousel">-->
+<!--                  <div class="carousel-inner">-->
+<!--                    <div class="carousel-item active" data-interval="4000">-->
+<!--                      <img src="images/r7wd.jpg" class="d-block" alt="roto r79 wd roof window">-->
+<!--                    </div>-->
+<!--                    <div class="carousel-item" data-interval="4000">-->
+<!--                      <img src="images/r7KEd.jpg" class="d-block" alt="roto r79 wd roof window">-->
+<!--                    </div>-->
+<!--                    <div class="carousel-item" data-interval="4000">-->
+<!--                      <img src="images/r79KWd.jpg" class="d-block" alt="roto r79 wd roof window">-->
+<!--                    </div>-->
+<!--                    <div class="carousel-item" data-interval="3000">-->
+<!--                      <img src="images/r79cut.jpg" class="d-block" alt="roto r79 wd roof window cut">-->
+<!--                    </div>-->
+<!--                    <div class="carousel-item" data-interval="3000">-->
+<!--                      <img src="images/r79-plast-cut.jpg" class="d-block" alt="roto r79 wd roof window cut">-->
+<!--                    </div>-->
+<!--                    <div class="carousel-item" data-interval="5000">-->
+<!--                      <img src="images/r79info.jpg" class="d-block" alt="roto r79 wd roof window info">-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <a class="carousel-control-prev" href="#carouselR79Interval" role="button" data-slide="prev">-->
+<!--                    <i class="fas fa-chevron-left arrow"></i>-->
+<!--                    <span class="sr-only">Previous</span>-->
+<!--                  </a>-->
+<!--                  <a class="carousel-control-next" href="#carouselR79Interval" role="button" data-slide="next">-->
+<!--                    <i class="fas fa-chevron-right arrow"></i>-->
+<!--                    <span class="sr-only">Next</span>-->
+<!--                  </a>-->
+<!--                </div>-->
+<!--                <span><b>Область застосування:</b> для дахів з кутом нахилу від 20° до 65°</span>-->
+<!--              </div>-->
+<!--              <div class="col-lg-6 col-12">-->
+<!--                <div class="modalTitleBox">-->
+<!--                  <div>-->
+<!--                    <h4 class="redColorOfText">Вікно з піднятою віссю відкривання Designo R79</h4>-->
+<!--                    <h5>Унікальні функціональні рішення</h5>-->
+<!--                  </div>-->
+<!--                  <div class="windowIconBox">-->
+<!--                    <img src="images/r7icon.JPG" alt="designo r7 roto icon">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="modalLine"></div>-->
+<!--                <h6 class="redColorOfText"><b>Основні переваги:</b></h6>-->
+<!--                <ul type="circle">-->
+<!--                  <li class="windowAdvantage">оригінальне рішення Roto – вісь відкривання в ¾ висоти вікна. Вільний та безпечний доступ людини до відкритого вікна, стоячи в повний зріст.</li>-->
+<!--                  <li class="windowAdvantage">зручний та безпечний доступ зсередини приміщення до зовнішньої поверхні стулки для можливості миття вікна, за рахунок примусового відкривання стулки вікна на 120°</li>-->
+<!--                  <li class="windowAdvantage">встановлений на заводі термоізоляційний блок WD, забезпечує додаткову теплоізоляцію вікна</li>-->
+<!--                  <li class="windowAdvantage">3-й клас безпеки для дерев’яних (Н) та 5-й найвищий – для вікон з ПВХ (К)</li>-->
+<!--                  <li class="windowAdvantage">регульована фурнітура дозволяє після монтажу усувати перекоси, що можуть виникнути в результаті роботи дахової конструкції, без додаткового демонтажу вікна</li>-->
+<!--                </ul>-->
+<!--                <div class="modalLine"></div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--              <div class="col-lg-6 col-12">-->
+<!--                <h6 class="redColorOfText"><b>Матеріал</b></h6>-->
+<!--                <div class="row">-->
+<!--                  <div class="col-3">-->
+<!--                    <img src="images/wood.JPG" alt="wood roto roof window" style="width: 100px; height: 100px; margin-bottom: 10px;">-->
+<!--                  </div>-->
+<!--                  <div class="col" style="display: flex; align-items: center;">-->
+<!--                    <span>Дерево</span>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <h6 class="redColorOfText"><b>Технічні характеристики</b></h6>-->
+<!--                <table class="specificationsTable">-->
+<!--                  <tr>-->
+<!--                    <th style="width: 100px;"></th>-->
+<!--                    <th>Коефіцієнт U<sub>g</sub></th>-->
+<!--                    <th>Коефіцієнт U<sub>w</sub></th>-->
+<!--                    <th>Значення енергопере-<br>дачі g в %</th>-->
+<!--                    <th>Клас звукоізо-<br>ляції</th>-->
+<!--                    <th>Клас повітропро-<br>никності</th>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td class="redColorOfText equipmentName" colspan="6">Стандарт</td>-->
+<!--                  </tr>-->
+<!--                  <tr class="specificationsRow">-->
+<!--                    <td>R7<span class="redColorOfText">5</span> H WD</td>-->
+<!--                    <td>1.0</td>-->
+<!--                    <td>1.3</td>-->
+<!--                    <td>52</td>-->
+<!--                    <td>1-2</td>-->
+<!--                    <td>3-4</td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td class="redColorOfText equipmentName" colspan="6">Двокамерний стандарт</td>-->
+<!--                  </tr>-->
+<!--                  <tr class="specificationsRow">-->
+<!--                    <td>R7<span class="redColorOfText">9</span> H WD</td>-->
+<!--                    <td>0.7</td>-->
+<!--                    <td>1.1</td>-->
+<!--                    <td>47</td>-->
+<!--                    <td>2</td>-->
+<!--                    <td>4</td>-->
+<!--                  </tr>-->
+<!--                </table>-->
+<!--                <div class="modalLine"></div>-->
+<!--              </div>-->
+<!--              <div class="col-lg-6 col-12">-->
+<!--                <h6 class="redColorOfText"><b>Матеріал</b></h6>-->
+<!--                <div class="row">-->
+<!--                  <div class="col-3">-->
+<!--                    <img src="images/plastic.JPG" alt="wood roto roof window" style="width: 100px; height: 100px; margin-bottom: 10px;">-->
+<!--                  </div>-->
+<!--                  <div class="col" style="display: flex; align-items: center;">-->
+<!--                    <span>ПВХ</span>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <h6 class="redColorOfText"><b>Технічні характеристики</b></h6>-->
+<!--                <table class="specificationsTable">-->
+<!--                  <tr>-->
+<!--                    <th style="width: 100px;"></th>-->
+<!--                    <th>Коефіцієнт U<sub>g</sub></th>-->
+<!--                    <th>Коефіцієнт U<sub>w</sub></th>-->
+<!--                    <th>Значення енергопере-<br>дачі g в %</th>-->
+<!--                    <th>Клас звукоізо-<br>ляції</th>-->
+<!--                    <th>Клас повітропро-<br>никності</th>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td class="redColorOfText equipmentName" colspan="6">Стандарт</td>-->
+<!--                  </tr>-->
+<!--                  <tr class="specificationsRow">-->
+<!--                    <td>R7<span class="redColorOfText">5</span> K WD</td>-->
+<!--                    <td>1.0</td>-->
+<!--                    <td>1.3</td>-->
+<!--                    <td>52</td>-->
+<!--                    <td>1-2</td>-->
+<!--                    <td>3-4</td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <td class="redColorOfText equipmentName" colspan="6">Двокамерний стандарт</td>-->
+<!--                  </tr>-->
+<!--                  <tr class="specificationsRow">-->
+<!--                    <td>R7<span class="redColorOfText">9</span> K WD</td>-->
+<!--                    <td>0.7</td>-->
+<!--                    <td>1.1</td>-->
+<!--                    <td>47</td>-->
+<!--                    <td>2</td>-->
+<!--                    <td>4</td>-->
+<!--                  </tr>-->
+<!--                </table>-->
+<!--                <div class="modalLine"></div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--              <div class="col-lg-6 col-12">-->
+<!--                <div class="wdIconBox">-->
+<!--                  <div class="wdIcon">WD</div>-->
+<!--                  <span><b>Блок WD</b></span>-->
+<!--                </div>-->
+<!--                <h6 class="redColorOfText"><b>Основні переваги</b></h6>-->
+<!--                <ul type="circle">-->
+<!--                  <li class="windowAdvantage">виготовлений з твердого і гнучкого поліпропілену</li>-->
+<!--                  <li class="windowAdvantage">підвищує енергоефективність вікна до 15%</li>-->
+<!--                  <li class="windowAdvantage">підвищує температуру в місці стику рами з відкосом приблизно на 5 °С</li>-->
+<!--                  <li class="windowAdvantage">пароізоляційна плівка – забезпечує герметичне з’єднання рами вікна з основною пароізоляцією даху</li>-->
+<!--                  <li class="windowAdvantage">усуває можливість виникнення містка холоду і запобігає утворенню конденсату</li>-->
+<!--                </ul>-->
+<!--                <div class="modalLine"></div>-->
+<!--              </div>-->
+<!--              <div class="col-lg-6 col-12">-->
+<!--                <h6 class="redColorOfText"><b>Додаткові опції вікна</b></h6>-->
+<!--                <ul type="circle">-->
+<!--                  <li class="windowAdvantage">можливість комбінувати з іншими вікнами WDF R4/R7 та WDT R4</li>-->
+<!--                  <li class="windowAdvantage">зовнішні та внутрішні аксесуари</li>-->
+<!--                </ul>-->
+<!--                <div class="modalLine"></div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--              <div class="col-12">-->
+<!--                <h6 class="redColorOfText"><b>Прайсові ціни</b></h6>-->
+<!--                <ul>-->
+<!--                  <li class="windowAdvantage">-->
+<!--                    <b class="redColorOfText">Вікно енергоефективне з зовнішним загартованим склом і термоізоляціним блоком WD</b>-->
+<!--                    <ul type="circle">-->
+<!--                      <li class="windowAdvantage "><b>WDF R75 H WD AL</b> <small>(дерев'яне)</small> <b>330 - 610 €<span class="redColorOfText">*</span></b></li>-->
+<!--                      <li class="windowAdvantage"><b>WDF R75 K WD AL</b> <small>(пластикове)</small> <b>370 - 652 €<span class="redColorOfText">*</span></b></li>-->
+<!--                    </ul>-->
+<!--                  </li>-->
+<!--                  <li class="windowAdvantage">-->
+<!--                    <b class="redColorOfText">Вікно енергоефективне з двокамерним склопакетом та зовнішним загартованим склом і термоізоляціним блоком WD</b>-->
+<!--                    <ul type="circle">-->
+<!--                      <li class="windowAdvantage "><b>WDF R79 H WD AL</b> <small>(дерев'яне)</small> <b>375 - 715 €<span class="redColorOfText">*</span></b></li>-->
+<!--                      <li class="windowAdvantage"><b>WDF R79 K WD AL</b> <small>(пластикове)</small> <b>418 - 785 €<span class="redColorOfText">*</span></b></li>-->
+<!--                    </ul>-->
+<!--                  </li>-->
+<!--                </ul>-->
+<!--                <span class="redColorOfText"><b>*</b><small>(в залежності від розміру)</small></span><br>-->
+<!--                <a class="btn btn-danger" href="tel:067-34-04-909">Зателефонуйте до нас і гарантовано отримайте знижку 25%</a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+
+  </div>
+</div>
