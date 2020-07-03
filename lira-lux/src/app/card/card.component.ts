@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
-import {ModalComponent} from '../modal/modal.component';
+//import {ModalComponent} from '../modal/modal.component';
 
 @Component({
   selector: 'app-card',
@@ -13,8 +13,18 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  open() {
-    const modalRef = this.modalService.open(ModalComponent);
+  open(content) {
+    const modalRef = this.modalService.open(content);
   }
+  // constructor(config: NgbModalConfig, private modalService: NgbModal) {
+    // customize default values of modals used by this component tree
+    // config.backdrop = 'static';
+    // config.keyboard = false;
+  // }
+
+  // open(content) {
+  //   this.modalService.open(content);
+  // }
+
 
 }

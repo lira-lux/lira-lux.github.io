@@ -11,7 +11,9 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardsWindowComponent } from './cards-window/cards-window.component';
 import { CardComponent } from './card/card.component';
-import { ModalComponent } from './modal/modal.component';
+import { AdminComponent } from './admin/admin.component';
+import { UserComponent } from './user/user.component';
+// import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { ModalComponent } from './modal/modal.component';
     FooterComponent,
     CardsWindowComponent,
     CardComponent,
-    ModalComponent
+    AdminComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,7 @@ import { ModalComponent } from './modal/modal.component';
     NgbModule
   ],
   providers: [],
-  bootstrap: [AppComponent, ModalComponent],
-  entryComponents: [ModalComponent, CardComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [CardComponent]
 })
 export class AppModule { }
