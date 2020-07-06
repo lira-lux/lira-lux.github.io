@@ -4,7 +4,9 @@ import {NgbModal, NgbCarousel, NgbSlideEvent, NgbSlideEventSource} from '@ng-boo
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+  styleUrls: [
+    './card.component.scss'
+  ]
 })
 export class CardComponent implements OnInit {
   @Input('card') card: any;
