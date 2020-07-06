@@ -145,7 +145,7 @@ body{
     background-color: red;
     margin-top: 6px;
 }
-.product-card{
+.product-card{/*є*/
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     margin-bottom: 20px;
@@ -159,10 +159,10 @@ body{
 .cards-default-shadow:hover{ /*є*/
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-.product-card:hover{
+.product-card:hover{/*є*/
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-.card__image-box{
+.card__image-box{/*є*/
     width: 97%;
     margin: auto;
     height: 360px;
@@ -170,10 +170,10 @@ body{
     background-size: contain;
     background-position: center;
 }
-.card-img-top{
+.card-img-top{/*є*/
     max-height: 300px;
 }
-.card-text{
+.card-text{/*є*/
     word-spacing: 3px;
 }
 .about-smth-card{ /*є*/
@@ -250,7 +250,7 @@ body{
     transition: 0.5s;
     opacity: 0;
 }
-.roto-card-logo-box{
+.roto-card-logo-box{/*є*/
     position: relative;
     top: 0px;
     left: 78%;
@@ -266,51 +266,51 @@ body{
     letter-spacing: 1px;
     font-weight: bold;
 }
-.arrow{
+.arrow{/*є*/
     color: black;
     font-size: 30px;
 }
-.carousel-item{
+.carousel-item{/*є*/
     height: 400px;
 }
-.d-block{
+.d-block{/*є*/
     max-height: 90%;
     max-width: 100%;
 }
 .redColorOfText{ /*є*/
     color: red;
 }
-.windowAdvantage{
+.windowAdvantage{/*є*/
     margin-bottom: 10px;
     margin-left: 10px;
 }
-.modalLine{
+.modalLine{/*є*/
     width: 100%;
     height: 1px;
     margin: 10px 0px;
     background-color: silver;
 }
-.specificationsTable{
+.specificationsTable{/*є*/
     width: 100%;
     margin-top: 10px;
     margin-bottom: 35px;
 }
-.specificationsTable th{
+.specificationsTable th{/*є*/
     font-size: 13px;
     font-weight: normal;
 }
-.specificationsTable th, td{
+.specificationsTable th, td{/*є*/
     text-align: center;
     border-bottom: 2px solid silver;
 }
-.specificationsRow td{
+.specificationsRow td{/*є*/
     background-color: #EEEEF0;
     border-left: 1px solid white;
 }
-.equipmentName{
+.equipmentName{/*є*/
     text-align: left;
 }
-.wdIcon{
+.wdIcon{/*є*/
     width: 60px;
     height: 60px;
     display: flex;
@@ -322,19 +322,19 @@ body{
     font-size: 35px;
     margin-right: 20px;
 }
-.wdIconBox{
+.wdIconBox{/*є*/
     display: flex;
     align-items: center;
     margin: 10px 0px 20px 0px;
 }
-.windowIconBox{
+.windowIconBox{/*є*/
     width: 115px;
     margin-left: 15px;
 }
-.windowIconBox img{
+.windowIconBox img{/*є*/
    width: 100%; 
 }
-.modalTitleBox{
+.modalTitleBox{/*є*/
     width: 100%;
     display: flex;
 }

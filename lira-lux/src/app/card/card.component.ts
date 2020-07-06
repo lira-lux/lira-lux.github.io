@@ -1,6 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
-//import {ModalComponent} from '../modal/modal.component';
+import {Component, Input, OnInit, ViewChild} from '@angular/core';
+import {NgbModal, NgbCarousel, NgbSlideEvent, NgbSlideEventSource} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-card',
@@ -9,22 +8,39 @@ import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 })
 export class CardComponent implements OnInit {
   @Input('card') card: any;
+  images: any [];
+  paused = false;
+  unpauseOnArrow = false;
+  pauseOnIndicator = false;
+  pauseOnHover = true;
+  @ViewChild('carousel', {static : true}) carousel: NgbCarousel;
   constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
+    this.images = this.card.images;
+    // console.log(this.card);
   }
   open(content) {
-    const modalRef = this.modalService.open(content);
+    const modalRef = this.modalService.open(content, { size: 'xl' });
   }
-  // constructor(config: NgbModalConfig, private modalService: NgbModal) {
-    // customize default values of modals used by this component tree
-    // config.backdrop = 'static';
-    // config.keyboard = false;
-  // }
+  togglePaused() {
+    if (this.paused) {
+      this.carousel.cycle();
+    } else {
+      this.carousel.pause();
+    }
+    this.paused = !this.paused;
+  }
 
-  // open(content) {
-  //   this.modalService.open(content);
-  // }
+  onSlide(slideEvent: NgbSlideEvent) {
+    if (this.unpauseOnArrow && slideEvent.paused &&
+      (slideEvent.source === NgbSlideEventSource.ARROW_LEFT || slideEvent.source === NgbSlideEventSource.ARROW_RIGHT)) {
+      this.togglePaused();
+    }
+    if (this.pauseOnIndicator && !slideEvent.paused && slideEvent.source === NgbSlideEventSource.INDICATOR) {
+      this.togglePaused();
+    }
+  }
 
 
 }
