@@ -20,10 +20,52 @@ export class StorageService {
         hasAdvantageTitle: false,
         adventage: ['оригінальне рішення Roto – вісь відкривання в ¾ висоти вікна. Вільний та безпечний доступ людини до відкритого вікна, стоячи в повний зріст.', 'зручний та безпечний доступ зсередини приміщення до зовнішньої поверхні стулки для можливості миття вікна, за рахунок примусового відкривання стулки вікна на 120°', 'встановлений на заводі термоізоляційний блок WD, забезпечує додаткову теплоізоляцію вікна', '3-й клас безпеки для дерев’яних (Н) та 5-й найвищий – для вікон з ПВХ (К)', 'регульована фурнітура дозволяє після монтажу усувати перекоси, що можуть виникнути в результаті роботи дахової конструкції, без додаткового демонтажу вікна']
       },
-      icon: '../assets/images/r7icon.JPG'
+      icon: '../assets/images/r7icon.JPG',
+      hasPlasticVersion: true,
+      woodSpecificationsTableRow1: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Стандарт',
+        specifications: ['R75 H WD', '1.0', '1.3', '52', '1-2', '3-4']
+      },
+      woodSpecificationsTableRow2: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Двокамерний стандарт',
+        specifications: ['R79 H WD', '0.7', '1.1', '47', '2', '4']
+      },
+      woodSpecificationsTableRow3: {
+        isIt: false
+      },
+      woodSpecificationsTableRow4: {
+        isIt: false
+      },
+      plasticSpecificationsTableRow1: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Стандарт',
+        specifications: ['R75 K WD', '1.0', '1.3', '52', '1-2', '3-4']
+      },
+      plasticSpecificationsTableRow2: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Двокамерний стандарт',
+        specifications: ['R79 K WD', '0.7', '1.1', '47', '2', '4']
+      },
+      plasticSpecificationsTableRow3: {
+        isIt: false
+      },
+      plasticSpecificationsTableRow4: {
+        isIt: false
+      },
+      hasWDinfo: true,
+      hasMoreOptions: true,
+      hasQuadro: false,
+      wdInfo: ['виготовлений з твердого і гнучкого поліпропілену', 'підвищує енергоефективність вікна до 15%', 'підвищує температуру в місці стику рами з відкосом приблизно на 5 °С', 'пароізоляційна плівка – забезпечує герметичне з’єднання рами вікна з основною пароізоляцією даху', 'усуває можливість виникнення містка холоду і запобігає утворенню конденсату'],
+      moreOptions: ['можливість комбінувати з іншими вікнами WDF R4/R7 та WDT R4', 'зовнішні та внутрішні аксесуари']
     },
     {
-      id: 1,
+      id: 2,
       cardTitle: 'Roto Designo R4',
       cardText: 'Вікно з центральною віссю відкривання. Енергоефективне, з зовнішним загартованим склом. Можливий блок WD (як опція).',
       price: '184 - 508 €',
@@ -34,10 +76,52 @@ export class StorageService {
         hasAdvantageTitle: false,
         adventage: ['вісь відкривання на ½ висоти вікна', 'ідеальна інтеграція вікна з дахом, ергономічна форма зовнішніх накладок, без видимих елементів з’єднань, колір – антрацит-металік', 'встановлений на заводі термоізоляційний блок WD (під замовлення)', '3-й клас безпеки для дерев’яних (Н) та 5-й найвищий – для вікон з ПВХ (К)', 'регульована фурнітура дозволяє після монтажу усувати перекоси, що можуть виникнути в результаті роботи дахової конструкції, без додаткового демонтажу вікна']
       },
-      icon: '../assets/images/r4icon.JPG'
+      icon: '../assets/images/r4icon.JPG',
+      hasPlasticVersion: true,
+      woodSpecificationsTableRow1: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Стандарт',
+        specifications: ['R45 H', '1.0', '1.5', '52', '1-2', '3-4']
+      },
+      woodSpecificationsTableRow2: {
+        isIt: true,
+        hasTitle: false,
+        title: '',
+        specifications: ['R45 H WD', '1.0', '1.3', '52', '1-2', '3-4']
+      },
+      woodSpecificationsTableRow3: {
+        isIt: false
+      },
+      woodSpecificationsTableRow4: {
+        isIt: false
+      },
+      plasticSpecificationsTableRow1: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Стандарт',
+        specifications: ['R45 K', '1.0', '1.4', '52', '1-2', '3-4']
+      },
+      plasticSpecificationsTableRow2: {
+        isIt: true,
+        hasTitle: false,
+        title: '',
+        specifications: ['R45 K WD', '1.0', '1.3', '52', '1-2', '3-4']
+      },
+      plasticSpecificationsTableRow3: {
+        isIt: false
+      },
+      plasticSpecificationsTableRow4: {
+        isIt: false
+      },
+      hasWDinfo: true,
+      hasMoreOptions: true,
+      hasQuadro: false,
+      wdInfo: ['виготовлений з твердого і гнучкого поліпропілену', 'підвищує енергоефективність вікна до 15%', 'підвищує температуру в місці стику рами з відкосом приблизно на 5 °С', 'усуває можливість виникнення містка холоду і запобігає утворенню конденсату'],
+      moreOptions: ['можливість встановлення автоматики вже після монтажу вікна, під час його експлуатації', 'можливість комбінувати з іншими вікнами WDF R4/R7 та WDT R4', 'зовнішні та внутрішні аксесуари']
     },
     {
-      id: 1,
+      id: 3,
       cardTitle: 'Roto Designo R8',
       cardText: 'Вікно з верхньою віссю (двома осями) відкривання. Енергоефективне, з зовнішним загартованим і внутрішнім склом триплекс, та WD блоком.',
       price: '562 - 1698 €',
@@ -48,10 +132,59 @@ export class StorageService {
         hasAdvantageTitle: false,
         adventage: ['подвійна система відкривання:', 'по верхній або в ¾ висоти вікна. Всі функції вікна управляються однією ручкою. Регулювання вікна після його монтажу.', 'вільний, комфортний і безпечний доступ до відкритого вікна, інтенсивне провітрювання та необмежений вид через вікрите вікно, завдяки куту відкривання 45°', 'висока енергоефективність Uw=1,1÷0,8 Вт/м2∙К', 'ідеальна герметичність і захист від взлому завдяки 4 точкам блокування, 5-й найвищий клас безпеки', 'безпечний і зручний доступ до зовнішної поверхні склопакету вікна завдяки автоматичному блокуванню стулки в положенні для миття (137°)', 'двоступеневе мікропровітрювання']
       },
-      icon: '../assets/images/r8icon.JPG'
+      icon: '../assets/images/r8icon.JPG',
+      hasPlasticVersion: true,
+      woodSpecificationsTableRow1: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Комфорт (Склопакет 8С)',
+        specifications: ['R88С H WD', '1.0', '1.1', '52', '2', '3']
+      },
+      woodSpecificationsTableRow2: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Двокамерний комфорт (Склопакет 9G)',
+        specifications: ['R89G H WD', '0.8', '1.0', '56', '3', '3']
+      },
+      woodSpecificationsTableRow3: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Двокамерний преміум (Склопакет 9Р)',
+        specifications: ['R89P H WD', '0.5', '0.82', '47', '3', '3']
+      },
+      woodSpecificationsTableRow4: {
+        isIt: false
+      },
+      plasticSpecificationsTableRow1: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Комфорт (Склопакет 8С)',
+        specifications: ['R88С K WD', '1.0', '1.1', '52', '2', '4']
+      },
+      plasticSpecificationsTableRow2: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Двокамерний комфорт (Склопакет 9G)',
+        specifications: ['R89G K WD', '0.8', '0.99', '56', '3', '4']
+      },
+      plasticSpecificationsTableRow3: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Двокамерний преміум (Склопакет 9Р)',
+        specifications: ['R89P K WD', '0.5', '0.8', '47', '3', '4']
+      },
+      plasticSpecificationsTableRow4: {
+        isIt: false
+      },
+      hasWDinfo: true,
+      hasMoreOptions: true,
+      hasQuadro: true,
+      wdInfo: ['виготовлений з поліетилену, стійкого до УФ-випромінювання та окислення', 'встановлюється на заводі у базовій комплектації', 'підвищує енергоефективність вікна до 15%', 'підвищує температуру у місці стику рами з відкосом приблизно на 5 °С', 'усуває можливість виникнення містка холоду і запобігає утворенню конденсату'],
+      moreOptions: ['можливість встановлення автоматики вже після монтажу вікна, під час його експлуатації', 'можна комбінувати з вікнами WDF R6/R8 та WDT R6', 'зовнішні та внутрішні аксесуари'],
+      quadroInfo: ['спеціальний ремінь для зручності переносу вікна покрівельниками під час монтажу на дах – швидкий, легкий та безпечний монтаж', 'вікно з енергоефективним однокамерним склопакетом 8С, з ще більш високим коефіцієнтом теплопередачі вікна Uw=1,1 Вт/м2∙К – оптимальна температура в приміщені та зниження витрат на опалення', 'безпечний склопакет з внутрішнім склом триплекс захищає від отримання травм (від фрагментів скла), якщо воно розбивається']
     },
     {
-      id: 1,
+      id: 4,
       cardTitle: 'Roto Designo R4 RotoTronic',
       cardText: 'Вікно з центральною віссю відкривання стулки та дистанційним керуванням. З зовнішним загартованим склом і термоізоляціним блоком WD (як опція).',
       price: '768 - 1134 €',
@@ -62,10 +195,52 @@ export class StorageService {
         hasAdvantageTitle: false,
         adventage: ['вікно з центральною віссю відкривання стулки та дистанційним керуванням (вісь обертання на ½ висоти вікна)', 'керується за допомогою настінного вимикача (RotoTronic E), дистанційного керування через пульт (RotoTronic EF)(продаються окремо)', 'встановлений на заводі термоізоляційний блок WD (під замовлення)', '+ 3-й клас безпеки для дерев’яних (Н) та 5-й найвищий – для вікон з ПВХ (К)', 'регульована фурнітура дозволяє після монтажу усувати перекоси, що можуть виникнути в результаті роботи дахової конструкції, без додаткового демонтажу вікна']
       },
-      icon: '../assets/images/r4tronicIcon.JPG'
+      icon: '../assets/images/r4tronicIcon.JPG',
+      hasPlasticVersion: true,
+      woodSpecificationsTableRow1: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Стандарт',
+        specifications: ['R45 H Tronic', '1.0', '1.5', '52', '2', '3-4']
+      },
+      woodSpecificationsTableRow2: {
+        isIt: true,
+        hasTitle: false,
+        title: '',
+        specifications: ['R45 H WD Tronic', '1.0', '1.3', '52', '2', '3-4']
+      },
+      woodSpecificationsTableRow3: {
+        isIt: false
+      },
+      woodSpecificationsTableRow4: {
+        isIt: false
+      },
+      plasticSpecificationsTableRow1: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Стандарт',
+        specifications: ['R45 K Tronic', '1.0', '1.4', '52', '2', '3-4']
+      },
+      plasticSpecificationsTableRow2: {
+        isIt: true,
+        hasTitle: false,
+        title: '',
+        specifications: ['R45 K WD Tronic', '1.0', '1.3', '52', '2', '4']
+      },
+      plasticSpecificationsTableRow3: {
+        isIt: false
+      },
+      plasticSpecificationsTableRow4: {
+        isIt: false
+      },
+      hasWDinfo: true,
+      hasMoreOptions: true,
+      hasQuadro: false,
+      wdInfo: ['виготовлений з твердого і гнучкого поліпропілену', 'підвищує енергоефективність вікна до 15%', 'підвищує температуру в місці стику рами з відкосом приблизно на 5 °С', 'пароізоляційна плівка – забезпечує герметичне з’єднання рами вікна з основною пароізоляцією даху', 'усуває можливість виникнення містка холоду і запобігає утворенню конденсату'],
+      moreOptions: ['можна комбінувати з вікнами WDF R4/R7 та WDT R4', 'зовнішні та внутрішні аксесуари', 'Версія Е управляється за допомогою вимикача. Версія EF – дистанційне керування за допомогою пульта. Вимикач та пульт замовляються окремо та в ціну вікна не входять.']
     },
     {
-      id: 1,
+      id: 5,
       cardTitle: 'Roto Q-4',
       cardText: 'Вікно з центральною віссю відкривання та верхньою ручкою. Енергоефективне з зовнішним загартованим склом. Можливий блок WD (як опція).',
       price: '372 - 884 €',
@@ -77,10 +252,51 @@ export class StorageService {
         advantageTitles: ['Енергоефективність', 'Якість', 'Легкий монтаж', 'Зручність верхньої ручки'],
         adventage: ['UW= від 1,2 до 0,77 Вт/м2К забезпечує оптимальну температуру в будинку та зменшує ваші рахунки за опалення вашої будівлі', '15 років гарантії та найвища якість продукції – це безвідмовна робота протягом багатьох років', 'Ліцензований монтаж на клік – це вірно встановлені, ідеально відрегульовані, завжди підігнані вікна', 'Легкий доступ до вікна означає більше можливостей облаштувати інтер’єр та більше простору в будинку']
       },
-      icon: '../assets/images/q4icon.JPG'
+      icon: '../assets/images/q4icon.JPG',
+      hasPlasticVersion: false,
+      woodSpecificationsTableRow1: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Склопакет 2S Standard',
+        specifications: ['Q-4 H2S S1', '1.0', '1.2', '52', '1', '4']
+      },
+      woodSpecificationsTableRow2: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Склопакет 2С Сomfort',
+        specifications: ['Q-4 H2C S1', '1.0', '1.2', '51', '2', '4']
+      },
+      woodSpecificationsTableRow3: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Склопакет 3С Comfort',
+        specifications: ['Q-4 H3C S0', '0.7', '1.0', '47', '3', '4']
+      },
+      woodSpecificationsTableRow4: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Склопакет 3P Premium',
+        specifications: ['Q-4 H3P P5', '0.5', '0.77', '47', '3', '4']
+      },
+      plasticSpecificationsTableRow1: {
+        isIt: false
+      },
+      plasticSpecificationsTableRow2: {
+        isIt: false
+      },
+      plasticSpecificationsTableRow3: {
+        isIt: false
+      },
+      plasticSpecificationsTableRow4: {
+        isIt: false
+      },
+      hasWDinfo: false,
+      hasMoreOptions: true,
+      hasQuadro: false,
+      moreOptions: ['можливість комбінувати з іншими вікнами Q-4/QT-4', 'зовнішні та внутрішні аксесуари']
     },
     {
-      id: 1,
+      id: 6,
       cardTitle: 'Roto Q-4 Tronic',
       cardText: 'Вікно з центральною віссю відкривання, верхньою ручкою, та дистанційним керуванням. Енергоефективне з зовнішним загартованим склом. (+WD)',
       price: '971 - 1576 €',
@@ -92,10 +308,51 @@ export class StorageService {
         advantageTitles: ['Енергоефективність', 'Якість', 'Легкий монтаж', 'Електричне керування'],
         adventage: ['Коефіцієнт UW= від 1,2 до 0,77 Вт/м2К забезпечує оптимальну температуру в будинку та зменшує ваші рахунки за опалення вашої будівлі', '15 років гарантії та найвища якість продукції – це безвідмовна робота протягом багатьох років', 'Ліцензований монтаж на клік – це правильно встановлені, ідеально відрегульовані, завжди підігнані вікна', 'Серійне вікно обладнане електроприводом і системою управління в якості стандартного використання в недоступних людині місцях. Управління вікном за допомогою вимикача на стіні (QT-4E), та дистанційного керування через пульт (QT-4F) (продаються окремо)']
       },
-      icon: '../assets/images/q4tronicIcon.JPG'
+      icon: '../assets/images/q4tronicIcon.JPG',
+      hasPlasticVersion: false,
+      woodSpecificationsTableRow1: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Склопакет 2S Standard',
+        specifications: ['QT4 H2S S1', '1.0', '1.2', '52', '1', '4']
+      },
+      woodSpecificationsTableRow2: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Склопакет 2С Сomfort',
+        specifications: ['QT4 H2C S1', '1.0', '1.2', '51', '2', '4']
+      },
+      woodSpecificationsTableRow3: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Склопакет 3С Comfort',
+        specifications: ['QT4 H3C S0', '0.7', '1.0', '47', '3', '4']
+      },
+      woodSpecificationsTableRow4: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Склопакет 3P Premium',
+        specifications: ['QT4 H3P P5', '0.5', '0.77', '47', '3', '4']
+      },
+      plasticSpecificationsTableRow1: {
+        isIt: false
+      },
+      plasticSpecificationsTableRow2: {
+        isIt: false
+      },
+      plasticSpecificationsTableRow3: {
+        isIt: false
+      },
+      plasticSpecificationsTableRow4: {
+        isIt: false
+      },
+      hasWDinfo: false,
+      hasMoreOptions: true,
+      hasQuadro: false,
+      moreOptions: ['можна комбінувати з вікнами Q-4/QT-4', 'зовнішні та внутрішні аксесуари']
     },
     {
-      id: 1,
+      id: 7,
       cardTitle: 'Roto Designo R6',
       cardText: 'Вікно з центральною віссю відкривання. Енергоефективне з зовнішним загартованим і внутрішнім склом триплекс, та блоком WD.',
       price: '508 - 1438 €',
@@ -106,10 +363,59 @@ export class StorageService {
         hasAdvantageTitle: false,
         adventage: ['вісь відкривання на ½ висоти вікна', 'висока енергоефективністьUw = 1,1÷0,8 Вт/м2∙К', 'встановлена на заводі пароізоляція, монтажні кутники і термоізоляційний блок WD', 'ідеальна інтеграція вікна з дахом, ергономічна форма зовнішніх накладок, без видимих елементів з’єднань, колір – антрацит-металік', '3-й клас безпеки для дерев’яних (Н) та 5-й найвищий – для вікон з ПВХ (К)', '4 точки блокування в кожному з кутів вікна – надійний захист від злому', 'двоступеневе мікропровітрювання', 'система регулювання вікна без демонтажу – за рахунок регульованої фурнітури усуваються перекоси, які можуть виникнути під час роботи дерев’яної конструкції покрівлі']
       },
-      icon: '../assets/images/r4icon.JPG'
+      icon: '../assets/images/r4icon.JPG',
+      hasPlasticVersion: true,
+      woodSpecificationsTableRow1: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Комфорт (Склопакет 8С)',
+        specifications: ['R68С H WD', '1.0', '1.1', '52', '2', '3']
+      },
+      woodSpecificationsTableRow2: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Двокамерний комфорт (Склопакет 9G)',
+        specifications: ['R69G H WD', '0.8', '1.0', '56', '3', '3']
+      },
+      woodSpecificationsTableRow3: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Двокамерний преміум (Склопакет 9Р)',
+        specifications: ['R69P H WD', '0.5', '0.82', '47', '3', '3']
+      },
+      woodSpecificationsTableRow4: {
+        isIt: false
+      },
+      plasticSpecificationsTableRow1: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Комфорт (Склопакет 8С)',
+        specifications: ['R68С K WD', '1.0', '1.1', '52', '2', '4']
+      },
+      plasticSpecificationsTableRow2: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Двокамерний комфорт (Склопакет 9G)',
+        specifications: ['R69G K WD', '0.8', '0.99', '56', '3', '4']
+      },
+      plasticSpecificationsTableRow3: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Двокамерний преміум (Склопакет 9Р)',
+        specifications: ['R69P K WD', '0.5', '0.8', '47', '3', '4']
+      },
+      plasticSpecificationsTableRow4: {
+        isIt: false
+      },
+      hasWDinfo: true,
+      hasMoreOptions: true,
+      hasQuadro: true,
+      wdInfo: ['виготовлений з поліетилену, стійкого до УФ-випромінювання та окислення', 'встановлюється на заводі у базовій комплектації', 'підвищує енергоефективність вікна до 15%', 'підвищує температуру у місці стику рами з відкосом приблизно на 5 °С', 'усуває можливість виникнення містка холоду і запобігає утворенню конденсату'],
+      moreOptions: ['можливість встановлення автоматики вже після монтажу вікна, під час його експлуатації', 'можливість з’єднання в комбінаціях з іншими вікнами WDF R6/R8 та WDT R6', 'зовнішні та внутрішні аксесуари'],
+      quadroInfo: ['спеціальний ремінь для зручності переносу вікна покрівельниками під час монтажу на дах – швидкий, легкий та безпечний монтаж', 'вікно з енергоефективним однокамерним склопакетом 8С, з ще більш високим коефіцієнтом теплопередачі вікна Uw=1,1 Вт/м2∙К – оптимальна температура в приміщені та зниження витрат на опалення', 'безпечний склопакет з внутрішнім склом триплекс захищає від отримання травм (від фрагментів скла), якщо воно розбивається']
     },
     {
-      id: 1,
+      id: 8,
       cardTitle: 'Roto Designo R6 RotoTronic',
       cardText: 'Електричне вікно з центральною віссю відкривання. Енергоефективне з зовнішним загартованим і внутрішнім склом триплекс, та блоком WD.',
       price: '1054 - 2201 €',
@@ -120,7 +426,56 @@ export class StorageService {
         hasAdvantageTitle: false,
         adventage: ['дистанційне керування відкриванням вікна (вісь відкривання на ½ висоти вікна)', 'керується за допомогою настінного вимикача (RotoTronic E), або пультом дистанційного керування (Roto Tronic EF) (продаються окремо)', 'встановлений на заводі термоізоляційний блок WD (базова комплектація)', 'регульована фурнітура дозволяє після монтажу усувати перекоси, що можуть виникнути в результаті роботи дахової конструкції, без додаткового демонтажу вікна']
       },
-      icon: '../assets/images/r4tronicIcon.JPG'
+      icon: '../assets/images/r4tronicIcon.JPG',
+      hasPlasticVersion: true,
+      woodSpecificationsTableRow1: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Комфорт (Склопакет 8С)',
+        specifications: ['R68С H Tronic', '1.0', '1.1', '52', '2', '3']
+      },
+      woodSpecificationsTableRow2: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Двокамерний комфорт (Склопакет 9G)',
+        specifications: ['R69G H Tronic', '0.8', '1.0', '56', '3', '3']
+      },
+      woodSpecificationsTableRow3: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Двокамерний преміум (Склопакет 9Р)',
+        specifications: ['R69P H Tronic', '0.5', '0.82', '47', '3', '3']
+      },
+      woodSpecificationsTableRow4: {
+        isIt: false
+      },
+      plasticSpecificationsTableRow1: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Комфорт (Склопакет 8С)',
+        specifications: ['R68С K Tronic', '1.0', '1.1', '52', '2', '3']
+      },
+      plasticSpecificationsTableRow2: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Двокамерний комфорт (Склопакет 9G)',
+        specifications: ['R69G K Tronic', '0.8', '1.0', '56', '3', '3']
+      },
+      plasticSpecificationsTableRow3: {
+        isIt: true,
+        hasTitle: true,
+        title: 'Двокамерний преміум (Склопакет 9Р)',
+        specifications: ['R69P K Tronic', '0.5', '0.99', '47', '3', '3']
+      },
+      plasticSpecificationsTableRow4: {
+        isIt: false
+      },
+      hasWDinfo: true,
+      hasMoreOptions: true,
+      hasQuadro: true,
+      wdInfo: ['виготовлений з поліетилену, стійкого до УФ-випромінювання та окислення', 'встановлюється на заводі у базовій комплектації', 'підвищує енергоефективність вікна до 15%', 'підвищує температуру у місці стику рами з відкосом приблизно на 5 °С', 'усуває можливість виникнення містка холоду і запобігає утворенню конденсату'],
+      moreOptions: ['можливість з’єднання в комбінаціях з іншими вікнами WDF R6/R8 та WDT R6', 'зовнішні та внутрішні аксесуари'],
+      quadroInfo: ['спеціальний ремінь для зручності переносу вікна покрівельниками під час монтажу на дах – швидкий, легкий та безпечний монтаж', 'вікно з енергоефективним однокамерним склопакетом 8С, з ще більш високим коефіцієнтом теплопередачі вікна Uw=1,1 Вт/м2∙К – оптимальна температура в приміщені та зниження витрат на опалення', 'безпечний склопакет з внутрішнім склом триплекс захищає від отримання травм (від фрагментів скла), якщо воно розбивається']
     }
   ];
 

@@ -48,9 +48,6 @@
           </div>
         </div>
 
-
-
-
         <div class="row">
           <div class="col-lg-6 col-12">
             <h6 class="redColorOfText"><b>Матеріал</b></h6>
@@ -72,32 +69,34 @@
                 <th>Клас звукоізо-<br>ляції</th>
                 <th>Клас повітропро-<br>никності</th>
               </tr>
-              <tr>
-                <td class="redColorOfText equipmentName" colspan="6">Стандарт</td>
+              <tr *ngIf="this.card.woodSpecificationsTableRow1.isIt && this.card.woodSpecificationsTableRow1.hasTitle">
+                <td class="redColorOfText equipmentName" colspan="6">{{this.card.woodSpecificationsTableRow1.title}}</td>
               </tr>
-              <tr class="specificationsRow">
-                <td>R7<span class="redColorOfText">5</span> H WD</td>
-                <td>1.0</td>
-                <td>1.3</td>
-                <td>52</td>
-                <td>1-2</td>
-                <td>3-4</td>
+              <tr class="specificationsRow" *ngIf="this.card.woodSpecificationsTableRow1.isIt">
+                <td *ngFor="let item of this.card.woodSpecificationsTableRow1.specifications">{{item}}</td>
               </tr>
-              <tr>
-                <td class="redColorOfText equipmentName" colspan="6">Двокамерний стандарт</td>
+              <tr *ngIf="this.card.woodSpecificationsTableRow2.isIt && this.card.woodSpecificationsTableRow2.hasTitle">
+                <td class="redColorOfText equipmentName" colspan="6">{{this.card.woodSpecificationsTableRow2.title}}</td>
               </tr>
-              <tr class="specificationsRow">
-                <td>R7<span class="redColorOfText">9</span> H WD</td>
-                <td>0.7</td>
-                <td>1.1</td>
-                <td>47</td>
-                <td>2</td>
-                <td>4</td>
+              <tr class="specificationsRow" *ngIf="this.card.woodSpecificationsTableRow2.isIt">
+                <td *ngFor="let item of this.card.woodSpecificationsTableRow2.specifications">{{item}}</td>
+              </tr>
+              <tr *ngIf="this.card.woodSpecificationsTableRow3.isIt && this.card.woodSpecificationsTableRow3.hasTitle">
+                <td class="redColorOfText equipmentName" colspan="6">{{this.card.woodSpecificationsTableRow3.title}}</td>
+              </tr>
+              <tr class="specificationsRow" *ngIf="this.card.woodSpecificationsTableRow3.isIt">
+                <td *ngFor="let item of this.card.woodSpecificationsTableRow3.specifications">{{item}}</td>
+              </tr>
+              <tr *ngIf="this.card.woodSpecificationsTableRow4.isIt && this.card.woodSpecificationsTableRow4.hasTitle">
+                <td class="redColorOfText equipmentName" colspan="6">{{this.card.woodSpecificationsTableRow4.title}}</td>
+              </tr>
+              <tr class="specificationsRow" *ngIf="this.card.woodSpecificationsTableRow4.isIt">
+                <td *ngFor="let item of this.card.woodSpecificationsTableRow4.specifications">{{item}}</td>
               </tr>
             </table>
             <div class="modalLine"></div>
           </div>
-          <div class="col-lg-6 col-12">
+          <div class="col-lg-6 col-12" *ngIf="this.card.hasPlasticVersion">
             <h6 class="redColorOfText"><b>Матеріал</b></h6>
             <div class="row">
               <div class="col-3">
@@ -117,29 +116,58 @@
                 <th>Клас звукоізо-<br>ляції</th>
                 <th>Клас повітропро-<br>никності</th>
               </tr>
-              <tr>
-                <td class="redColorOfText equipmentName" colspan="6">Стандарт</td>
+              <tr *ngIf="this.card.plasticSpecificationsTableRow1.isIt && this.card.plasticSpecificationsTableRow1.hasTitle">
+                <td class="redColorOfText equipmentName" colspan="6">{{this.card.plasticSpecificationsTableRow1.title}}</td>
               </tr>
-              <tr class="specificationsRow">
-                <td>R7<span class="redColorOfText">5</span> K WD</td>
-                <td>1.0</td>
-                <td>1.3</td>
-                <td>52</td>
-                <td>1-2</td>
-                <td>3-4</td>
+              <tr class="specificationsRow" *ngIf="this.card.plasticSpecificationsTableRow1.isIt">
+                <td *ngFor="let item of this.card.plasticSpecificationsTableRow1.specifications">{{item}}</td>
               </tr>
-              <tr>
-                <td class="redColorOfText equipmentName" colspan="6">Двокамерний стандарт</td>
+              <tr *ngIf="this.card.plasticSpecificationsTableRow2.isIt && this.card.plasticSpecificationsTableRow2.hasTitle">
+                <td class="redColorOfText equipmentName" colspan="6">{{this.card.plasticSpecificationsTableRow2.title}}</td>
               </tr>
-              <tr class="specificationsRow">
-                <td>R7<span class="redColorOfText">9</span> K WD</td>
-                <td>0.7</td>
-                <td>1.1</td>
-                <td>47</td>
-                <td>2</td>
-                <td>4</td>
+              <tr class="specificationsRow" *ngIf="this.card.plasticSpecificationsTableRow2.isIt">
+                <td *ngFor="let item of this.card.plasticSpecificationsTableRow2.specifications">{{item}}</td>
+              </tr>
+              <tr *ngIf="this.card.plasticSpecificationsTableRow3.isIt && this.card.plasticSpecificationsTableRow3.hasTitle">
+                <td class="redColorOfText equipmentName" colspan="6">{{this.card.plasticSpecificationsTableRow3.title}}</td>
+              </tr>
+              <tr class="specificationsRow" *ngIf="this.card.plasticSpecificationsTableRow3.isIt">
+                <td *ngFor="let item of this.card.plasticSpecificationsTableRow3.specifications">{{item}}</td>
+              </tr>
+              <tr *ngIf="this.card.plasticSpecificationsTableRow4.isIt && this.card.plasticSpecificationsTableRow4.hasTitle">
+                <td class="redColorOfText equipmentName" colspan="6">{{this.card.plasticSpecificationsTableRow4.title}}</td>
+              </tr>
+              <tr class="specificationsRow" *ngIf="this.card.plasticSpecificationsTableRow4.isIt">
+                <td *ngFor="let item of this.card.plasticSpecificationsTableRow4.specifications">{{item}}</td>
               </tr>
             </table>
+            <div class="modalLine"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-12" *ngIf="this.card.hasWDinfo">
+            <div class="wdIconBox">
+              <div class="wdIcon">WD</div>
+              <span><b>Блок WD</b></span>
+            </div>
+            <h6 class="redColorOfText"><b>Основні переваги</b></h6>
+            <ul type="circle">
+              <li class="windowAdvantage" *ngFor="let item of this.card.wdInfo">{{item}}</li>
+            </ul>
+            <div class="modalLine"></div>
+          </div>
+          <div class="col-lg-6 col-12" *ngIf="this.card.hasMoreOptions">
+            <h6 class="redColorOfText"><b>Додаткові опції вікна</b></h6>
+            <ul type="circle">
+              <li class="windowAdvantage" *ngFor="let item of this.card.moreOptions">{{item}}</li>
+            </ul>
+            <div class="modalLine"></div>
+          </div>
+          <div class="col-lg-6 col-12" *ngIf="this.card.hasQuadro">
+            <h6 class="redColorOfText"><b>Версія Quadro</b></h6>
+            <ul type="circle">
+              <li class="windowAdvantage" *ngFor="let item of this.card.quadroInfo">{{item}}</li>
+            </ul>
             <div class="modalLine"></div>
           </div>
         </div>
