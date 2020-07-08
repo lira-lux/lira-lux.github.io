@@ -111,6 +111,10 @@
     max-width: 100%;
   }
 }
+.modalPhoneBtn{
+  margin-top: 15px;
+  width: 50%;
+}
 
 ::ng-deep ngb-carousel {
   outline: none;
@@ -130,5 +134,17 @@
 @media screen and (max-width: 768px){
   .carousel-image{
     height: 300px;
+  }
+  .modalPhoneBtn{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    i{
+      margin-left: 5px;
+    }
   }
 }
