@@ -13,6 +13,7 @@ import { CardsWindowComponent } from './cards-window/cards-window.component';
 import { CardComponent } from './card/card.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
+import {ReactiveFormsModule} from '@angular/forms';
 // import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
@@ -31,7 +32,8 @@ import { UserComponent } from './user/user.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

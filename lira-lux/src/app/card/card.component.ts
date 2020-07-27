@@ -20,10 +20,9 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
     this.images = this.card.images;
-    // console.log(this.card);
   }
-  open(content) {
-    const modalRef = this.modalService.open(content, { size: 'xl' });
+  open(content, size) {
+    const modalRef = this.modalService.open(content, { size});
   }
   togglePaused() {
     if (this.paused) {

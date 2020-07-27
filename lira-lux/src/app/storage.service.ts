@@ -758,4 +758,8 @@ export class StorageService {
   public getCards() {
     return this.cards;
   }
+
+  public updateCards(data) {
+    this.cards = data;
+  }
 }

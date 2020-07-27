@@ -6,7 +6,10 @@
     <h5 class="card-title">{{card.cardTitle}}</h5>
     <p class="card-text">{{card.cardText}}</p>
     <p>{{card.price}}</p>
-    <button type="button" class="btn btn-outline-success" (click)="open(content)">Дізнатись більше</button>
+    <div class="buttons-box">
+      <button type="button" class="btn btn-outline-success" (click)="open(content, 'xl')">Дізнатись більше</button>
+      <button type="button" class="btn btn-outline-danger" (click)="open(phone, 'lg')">Купити</button>
+    </div>
     <ng-template #content let-c="close" let-d="dismiss">
       <div class="modal-header">
         <h4 class="modal-title" id="modal-basic-title">{{card.cardTitle}}</h4>
@@ -178,13 +181,51 @@
                 </ul>
               </li>
             </ul>
-            <span class="redColorOfText"><b>*</b><small>Вартість вказана зі знижкою 25% від прайсової ціни (діапазон цін в залежності від розміру "найменше - найбільше"). Вартість тільки за вікно, без гідроізоляційного коміру (продається окремо).</small></span><br>
-            <a class="btn btn-success modalPhoneBtn" href="tel:067-34-04-909">Консультація / замовити вікно <i class="fas fa-phone-alt"></i></a>
+            <span class="redColorOfText"><b>*</b><small>Вартість вказана зі знижкою 25% від прайсової ціни (діапазон цін в залежності від розміру). Вартість тільки за вікно, без гідроізоляційного коміру (продається окремо).</small></span><br>
+            <button class="btn btn-success modalPhoneBtn" (click)="open(phone, 'lg')">Консультація / замовити вікно <i class="fas fa-phone-alt"></i></button>
           </div>
         </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Закрити</button>
+      </div>
+    </ng-template>
+
+    <ng-template #phone let-c="close" let-d="dismiss">
+      <div class="modal-header">
+        <h4 class="modal-title">Привіт!</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4>Зацікавили наші послуги?</h4>
+        <h6>Зателефонуйте до нас і ми надамо Вам усю необхідну інформацію, допоможемо з вибором вікна, та оформимо Ваше замовлення якнайшвидше!</h6>
+        <div class="row cantacts-wrapper">
+          <div class="card cards-default-shadow col-lg-5 col-11 contact-card">
+            <div class="photo-box card">
+              <img src="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.0-9/22366442_381609942271401_8142123880148032107_n.jpg?_nc_cat=108&_nc_sid=09cbfe&_nc_ohc=Ll8QJQPdmgUAX_lWj7V&_nc_ht=scontent.flwo3-1.fna&oh=094e96cfd6f7a4d9adb7fe7ca98c06fb&oe=5F2D8C21" >
+            </div>
+            <div class="contact-info-box">
+              <h5>Ігор Миронович</h5>
+              <p>067-34-04-909</p>
+              <a href="tel:067-34-04-909" class="btn btn-success">Зателефонувати</a>
+            </div>
+          </div>
+          <div class="card cards-default-shadow col-lg-5 col-11 contact-card">
+            <div class="photo-box card">
+              <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGQ7QJeLV2s8Q/profile-displayphoto-shrink_400_400/0?e=1599696000&v=beta&t=sbnbvuY8Pb7npylfJt6hesmsD3ZjIEEkC9ONFqZmsbc">
+            </div>
+            <div class="contact-info-box">
+              <h5>Юрій Ігорович</h5>
+              <p>093-74-03-014</p>
+              <a href="tel:093-74-03-014" class="btn btn-success">Зателефонувати</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="d('Cross click')">Закрити</button>
       </div>
     </ng-template>
   </div>

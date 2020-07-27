@@ -7,7 +7,7 @@ import {UserComponent} from './user/user.component';
 
 const routes: Routes = [
   {
-    path: 'admin', component: AdminComponent
+    path: 'admin-lira-lux-2020', component: AdminComponent
     // canActivate
     },
   {
